@@ -9,3 +9,34 @@
 # Proszę dopisywać swoje pytania
 
 
+#Pytania Filip
+
+Iteracja oraz usuwanie elementu z wektora, co nalezy zrobic z iteratorem wektora po uzyciu funkcji erase:
+- Iteratora nie nalezy uzywac z metoda erase
+- Nie nalezy nic robic - Iterator automatycznie zostanie zaktualizowany aby wskazywal element n+1
++ metoda erase zwraca nowy iterator ktory nalezy zamienic ze starym 
+- zadne z powyzszych
+
+W jaki sposobro zorganizowana jest pamiec std::vector oraz std::list:
+- Sa tak samo zorganizowane jedyna roznica jest sposob zarzadzania elementami skladowymi
++ std::vector jest zorganizowany jako ciagly element pamieci, std::list jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona. 
+- std::list jest zorganizowany jako ciagly element pamieci, std::vector jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona.
+- zadne z powyzszych
+
+Co stanie sie gdy na std::vector zostanie wywolana metoda insert lub resize jednak aktualnie "przed nim" pamiec jest juz zarezerwowana:
+-Vector w takim przypadku rzuci wyjatkiem
+- Vector wskaze na kolejny wolny element pamieci i tam bedzie kontynuawal
+- Vector nadpisze wartosc zarezerwowanej pamieci znajdujacej sie "przed nim"
++ Vector znajdzie wystarczajaco duzy obszar ciaglej pamieci, zarezerwuje go, przekopiuje wszystkie elementy skladowe, zwolni wczesniejszy obszar pamieci oraz wykona wywolana metode. 
+
+W przypadku tworzenia zbioru z niepowtarzalnymi elementami oraz struktura ktora przetrzymuje dodatkowe informacje np. lista uzytkownikow [std::string nazwa uzytkownika, wlasny typ: dane o uzytkowniku] jakiego kontenera powinnismy uzyc:
+- std::vector
+- std::list
+- std::set
++ std:::map 
+
+Wytlumacz roznice miedzy std::map a std::set
+- nie ma roznicy
+- std::map jest zdecydowanie wolniejsza
++ std::map posiada klucz oraz wartosc, std::set posiada tylko klucz 
+- std::set posiada klucz oraz wartosc, std::map posiada tylko klucz
