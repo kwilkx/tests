@@ -8,4 +8,40 @@
 
 # Proszę dopisywać swoje pytania
 
+#Kamil Frelichowski, pytania STL zestaw 3
 
+Jak podczas korzystania z iteratora sprawdzisz, czy dotarles do ostatniej iteracji?
+
+- Porównam iterator z wartoscia NULL
++ Porównam iterator z wartoscia wywolania metody end() dla kontenera, po którym iteruje
+- Porównam iterator z wartoscia 0
+- Porównam iterator z wartoscia wywolania metody begin() dla kontenera, po którym iteruje
+
+
+Aby znalezc konkretny element w kontenerze set s nalezy zastosowac:
+- s.search(element)
++ s.find(element)
+- search(s, element)
+- find(s, element)
+
+
+Aby wstawic klucz typu int i wartosc typu string do map1 stosujemy wyrazenie
+- map1.insert(100, "WSTE");
+- map1.insert(map<int, string>::value_type("WSTE", 100));
++ map1.insert(map<int, string>::value_type(100, "WSTE"));
+- map1.insert("WSTE", 100);
+
+
+
+Który kontener jest wydajny jezeli dodaje sie nowe elementy do jego konca, ale jest malo wydajny,gdy dodaje sie elementy w kazde inne miejsce
++ vector
+- deque
+- list
+- set
+
+W których z ponizszych kontenerów elementy sa sortowane wedug klucza
+
++ set
+- pair
+- tuple
+- Zadne z powyzszych
