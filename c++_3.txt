@@ -71,4 +71,35 @@ Destruktor dla class MojaKlasa to:
 - MojaKlasa(destroy);
 - &MojaKlasa();
 
+#Kamil Frelichowski, pytania cpp zestaw 3
+Mamy nastepujace wyrazenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwróci:
+- Wartosc zmiennej tel
+- Adres zmiennej tel
++ Adres wskaznika wsk
+- b i c sa prawidlowe
 
+
+Mamy literal const char *s= "Tablica charow". std::cout<<s; wyswietli
+- Adres wskaznika s
++ Caly literal
+- Pierwsza litere literalu
+- Blad,gdyz nie wspiano jawnie znaku \0
+
+Kiedy stosujemy typ referencyjny:
++ Referencja jest na stosie a obiekt na stercie
+- Referencja i obiekt sa na stosie
+- Referencja i obiekt sa na stercie
+- Referencja jest na stercie a obiekt na stosie
+
+Wyrazenie MyFun(int funArg=0) {} dla klasy Myfun ;, to:
+- Zwykly konstruktor
+- Konstruktor kopiujacy
++ Konstruktor domyslny
+- Deklaracja funkcji
+
+
+Lista inicjalizacyjna konstruktora musi byc uzyta
+- Gdy pole klasy zadeklarowane jest jako stale 
+- Gdy pole klasy jest referencja
+- Gdy polem klasy jest obiekt
++ Kazde z powyzszych
