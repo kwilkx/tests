@@ -71,3 +71,39 @@ Domyslnie dostep do wszystkich elementow klasy jest ustawiony na:
 - protected
 - topsecret
 
+#Kamil Frelichowski, pytania cpp zestaw 2
+
+Przy przeciazeniu dwóch funkcji:
+- Funkcje moga sie róznic tylko typem zwracanym
+- Funkcje moga róznic sie typem argumentów
+- Funkcje moga róznic sie iloscia argumentów
++ B i C sa prawidlowe
+
+
+Konstruktor
+- Zwraca typ
+- Moze znajdowac sie w sekcji private
+- Nie moze byc przeciazony
++ Nie moze byc dziedziczony
+
+
+
+Automatycznie generowany konstruktor kopiujacy jest zawsze:
++ public
+- private
+- protected
+- public,ale tylko w klasie bazowej
+
+
+Klasa abstrakcyjna
+- Musi miec wszystkie metody czysto wirtualne
+- Wystarczy jedna metoda czytso wirtualna
+- Nie mozna utworzyc obiektu takiej klasy
++ B i C sa prawidlowe
+
+
+Destruktor wirtualny
++ Nalezy stosowac zawsze w klasie bazowej
+- Nalezy stosowac tylko,gdy  klasa posiada prznjamniej jedna metode wirtualna
+- nie moze byc czysto wirtualny
+- Nalezy stosowac w klasie wystepuje konstruktor wirtualny
