@@ -8,5 +8,38 @@
 
 # Proszę dopisywać swoje pytania
 
+#Kamil Frelichowski, pytania STL zestaw 1
+
+std::myVector.back()
+- Zwraca pierwszy element wektora
++ Zwraca referncje na ostatni element wektora
+- Zwraca iteraor na ostatni element wektora
+- Dodaje element do konca wektora
 
 
+Jaka jest róznica pomiedzy array a vector
+- Array inicjowany jest 0 a vector nie
++ Array ma okreslona wielkosc a vector moze ja zmieniac dynamicznie
+- Vector ma okreslona wielkosc a array moze ja zmieniac dynamicznie
+- Array zajmuje wiecej miejsca niz odpowiadajacy mu wektor
+
+
+Jak wydrukowac pierwszy element wektora myVector
+- std::cout<<myVector.at(0);
+- std::cout<<myVector[0];
+- std::cout<<myVector.front();
++ Wszystkie odpowiedzi sa prawidlowe
+
+
+Czym jest iterator w STL
++ Obiektem
+- Wskaznikiem
+- Adresem
+- Klasa
+
+
+W jaki sposób mozna jednoczesnie usunac wszystkie elementy z mapy?
+- Zamienic element na lancuch pusty
+- Wywolac metode erase;
+- Wywolac metode empty;
++ Wywolac metode clear;
