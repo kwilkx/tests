@@ -8,4 +8,40 @@
 
 # Proszę dopisywać swoje pytania
 
+#Kamil Frelichowski, pytania STL zestaw 2
 
+Który z ponizszych zapisów poprawnie definiuje iterator, którego mozna uzyc z wektorem calkowitym vector<int>
+- iterator<int> itr;
+- vector::iterator  itr;
++ vector<int>::iterator itr;
+- vector<int>::iterator<int>itr;
+
+
+Który z ponizszych zapisów udostepnia klucz elementu, przy którym w danym mmencie znajduje sie itarator na mapie?
+
+- itr.first
++ itr->first
+- itr->key
+- itr.key
+
+
+Które z ponizszych metod wystepuja w klasie stack
+- pop()
+- top()
+- push(element)
++ A i C prawidlowe
+
+
+Które z ponizszych sa konterenami sekwencyjnymi ?
+
++ List
+- Deque
+- Map
+- Set
+
+
+Które z ponizszych kontenerów uzywaja iteratorów
+- List
+- Deque
+- Multimap
++ Wszystkie z powyzszych
