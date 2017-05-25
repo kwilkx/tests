@@ -104,4 +104,4 @@ Jak wyrazamy negacje w c++:
 + !=
 - <>
 - ><
-- =!
+- !
