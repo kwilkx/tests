@@ -71,3 +71,33 @@ Domyslnie dostep do wszystkich elementow klasy jest ustawiony na:
 - protected
 - topsecret
 
+#Konrad A., pytania cpp zestaw 2
+Jakimi symbolami wprowadzamy komentarze w C++:
+- ^^ i ()
+- * i ++
+- \\ i \**\
++ // i /**/
+
+Instrukcja switch to instrukcja:
+- skoku
++ wyboru
+- interacyjna
+- warunkowa
+
+Wczytanie danych do zmiennej odbywa się poprzez:
+- writeln
++ cin>>
+- cin<<
+- cout>>
+
+Która etykieta oznacza, że deklarowane za nią składniki (funkcje i dane) są dostępne tylko z wnętrza klasy:
+- public
+- protected
++ private
+- nie ma takiej etykiety
+
+Operator zakresu to:
++ "::"
+- "*"
+- "/"
+- "^"
