@@ -8,4 +8,35 @@
 
 # Proszę dopisywać swoje pytania
 
+#Konrad A., pytania STL zestaw 2
+Kontener bitset to:
+- struktura danych
++ tablice o ustalonym rozmiarze zawierajace bity lub wartosci logiczne
+- zmienna
+- zadne z powyzszych
+
+Co robi konstruktor domyślny bitser<bits>::bitset()
+- Tworzy zmienna o dwoch bitach
++ Tworzy zestaw bitow zainicjalizowany zerami
+- Dodaje do siebie dwie liczby
+- Usuwa wszystkie funkcje z programu
+
+Pliki naglowkowe standardowej biblioteki jezyka C++ umieszczone sa w:
++ <>
+- ''
+- ""
+- ()
+
+Wartosc zlozonosci stala to:
++ O(1)
+- O(log(n))
+- O(n)
+- zadne z powyzszych
+
+Slowo kluczowe noexcept oznacza:
++ Okreslenie, ze funkcja nie moze rzucac wyjatkow
+- funkcja nie istnieje
+- Nie ma takiego slowa kluczowego
+- Funkcje, ktora nic nie zwraca
+
 
