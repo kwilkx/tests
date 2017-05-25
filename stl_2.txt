@@ -20,7 +20,7 @@ Adaptery w STL to :
 - stos
 - kolejka
 - kolejka priorytetowa
-- wszystkie wyzej wymienione
++ wszystkie wyzej wymienione
 
 Iteratory mozna wykorzystac do:
 - wyszukiwania danych
@@ -31,8 +31,7 @@ Iteratory mozna wykorzystac do:
 Capality zwraca:
 - iterator wskazujacy na element
 - referencje na ostatni element w kontenerze
-- minimalna liczbe elementow jaka moze pomiescic kontener bez 
-wykonywania realokacji pamieci
+- minimalna liczbe elementow jaka moze pomiescic kontener bez wykonywania realokacji pamieci
 + maksymalna dlugosc tablicy kontenera wyrazona w liczbie elementow
 
 Rbegin zwraca iterator odwrotny wskazujacy na:
