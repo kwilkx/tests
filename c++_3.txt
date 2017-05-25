@@ -73,11 +73,11 @@ Destruktor dla class MojaKlasa to:
 
 
 #Pytania Filip
-Czemu przy dziedziczeniu destruktory powinny byc virtualne:
-+ aby w czasie destrukcji obiektu zostal wywolany rowniez destruktor klasy bazowej
-- aby zostal wywolany jedynie destruktor klasy odziedziczonej
-- w innym przypadku wystapi blad kompilacji 
-- zadne z powyzszych
+Po co są stosowane destruktory wirtualne:
++ aby uniknąć undefined behavior w sytuacji gdy obiekt klasy bazowej wskazuje na klase odziedziczoną
+- aby w czasie destrukcji obiektu został wywołany również destruktor klasy bazowej
+- aby uniknąć błędu kompilacji
+- żadne z powyższych
 
 Obiekty okreslone jako protected sa dostepne dla:
 + tej klasy oraz klas dziedziczacych
