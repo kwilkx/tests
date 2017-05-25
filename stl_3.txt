@@ -23,11 +23,20 @@ W jaki sposobro zorganizowana jest pamiec std::vector oraz std::list:
 - std::list jest zorganizowany jako ciagly element pamieci, std::vector jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona.
 - zadne z powyzszych
 
-Co stanie sie gdy na std::vector zostanie wywolana metoda insert lub resize jednak aktualnie "przed nim" pamiec jest juz zarezerwowana:
--Vector w takim przypadku rzuci wyjatkiem
-- Vector wskaze na kolejny wolny element pamieci i tam bedzie kontynuawal
-- Vector nadpisze wartosc zarezerwowanej pamieci znajdujacej sie "przed nim"
-+ Vector znajdzie wystarczajaco duzy obszar ciaglej pamieci, zarezerwuje go, przekopiuje wszystkie elementy skladowe, zwolni wczesniejszy obszar pamieci oraz wykona wywolana metode. 
+W jaki sposob zadeklarowac wektor ponizszego typu:
+
+class CustomType
+{
+public:
+CustomType() = default;
+int x;
+}
+
+- std::vector<class CustomType> vec
++ std::vector<CustomType> vec
+- std::vector vec
+- std::vector<int> vec
+
 
 W przypadku tworzenia zbioru z niepowtarzalnymi elementami oraz struktura ktora przetrzymuje dodatkowe informacje np. lista uzytkownikow [std::string nazwa uzytkownika, wlasny typ: dane o uzytkowniku] jakiego kontenera powinnismy uzyc:
 - std::vector
