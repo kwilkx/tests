@@ -8,11 +8,42 @@
 
 # Proszę dopisywać swoje pytania
 
+# Paweł D., pytania STL zestaw 2
+iterator end wskazuje:
+- na ostatni element
++ 1 miejsce za ostatni element
+- 1 miejsce przed ostatni element
+- koniec programu
+
+front daje nam dostep do
++ pierwszego elementu
+- 1 miejece za pierwszym elementem
+- 1 miejece przed pierwszym elementem
+- ostatniego elementu
+
+Set zawiera elementy:
+- nieposortowane i unikalne
++ posortowane i unikalne
+- posortowane, mogą się powtarzać
+- nieposortowane, mogą się powtarzać
+
+Wielkość vectora:
++ moze ulegac zmianie
+- jest stala
+- moze ulec zmianie tylko raz
+- moze ulec zmienie tylko w okreslonych sytuacjach
+
+Operator [] w przypadku vectora:
+- zadne z ponizszych
+- vector nie posiada operatora []
+- wstawia n elementow do vectora
++ [n] daje dostep do elementu na pozycji n w wektorze
+
 #Konrad A., pytania STL zestaw 2
 Kontener bitset to:
-- struktura danych
+- nie ma takiego kontenera
 + tablice o ustalonym rozmiarze zawierajace bity lub wartosci logiczne
-- zmienna
+- zmienna zawzse globalna zajmująca 1 bit ustawiony w pamięci
 - zadne z powyzszych
 
 Co robi konstruktor domyślny bitser<bits>::bitset()
@@ -38,5 +69,3 @@ Slowo kluczowe noexcept oznacza:
 - funkcja nie istnieje
 - Nie ma takiego slowa kluczowego
 - Funkcje, ktora nic nie zwraca
-
-
