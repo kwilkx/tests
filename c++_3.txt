@@ -74,7 +74,7 @@ Destruktor dla class MojaKlasa to:
 
 #Pytania Filip
 Po co są stosowane destruktory wirtualne:
-+ aby uniknąć undefined behavior w sytuacji gdy obiekt klasy bazowej wskazuje na klase odziedziczoną
++ aby zapewnić wywołanie wszystkich destruktorów klas pochodnych
 - aby w czasie destrukcji obiektu został wywołany również destruktor klasy bazowej
 - aby uniknąć błędu kompilacji
 - żadne z powyższych
