@@ -23,15 +23,7 @@ W jaki sposobro zorganizowana jest pamiec std::vector oraz std::list:
 - std::list jest zorganizowany jako ciagly element pamieci, std::vector jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona.
 - zadne z powyzszych
 
-W jaki sposob zadeklarowac wektor ponizszego typu:
-
-class CustomType
-{
-public:
-CustomType() = default;
-int x;
-}
-
+W jaki sposob zadeklarowac wektor ponizszego typu: class CustomType { public: CustomType() = default; int x; }:
 - std::vector<class CustomType> vec
 + std::vector<CustomType> vec
 - std::vector vec
@@ -44,7 +36,7 @@ W przypadku tworzenia zbioru z niepowtarzalnymi elementami oraz struktura ktora 
 - std::set
 + std:::map 
 
-Wytlumacz roznice miedzy std::map a std::set
+Wytlumacz roznice miedzy std::map a std::set:
 - nie ma roznicy
 - std::map jest zdecydowanie wolniejsza
 + std::map posiada klucz oraz wartosc, std::set posiada tylko klucz 
