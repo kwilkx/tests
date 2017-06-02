@@ -10,22 +10,21 @@
 
 #Kamil Frelichowski, pytania STL zestaw 3
 
-Jak podczas korzystania z iteratora sprawdzisz, czy dotarles do ostatniej iteracji?
+Jak podczas korzystania z iteratora sprawdzisz, czy dotarłeś do ostatniej iteracji?
+- Porównam iterator z wartością NULL
++ Porównam iterator z wartością wywołania metody end() dla kontenera, po którym iteruję
+- Porównam iterator z wartościa 0
+- Porównam iterator z wartościa wywołania metody begin() dla kontenera, po którym iteruje
 
-- Porównam iterator z wartoscia NULL
-+ Porównam iterator z wartoscia wywolania metody end() dla kontenera, po którym iteruje
-- Porównam iterator z wartoscia 0
-- Porównam iterator z wartoscia wywolania metody begin() dla kontenera, po którym iteruje
 
-
-Aby znalezc konkretny element w kontenerze set s nalezy zastosowac:
+Aby znaleźć konkretny element w kontenerze set s należy zastosować:
 - s.search(element)
 + s.find(element)
 - search(s, element)
 - find(s, element)
 
 
-Aby wstawic klucz typu int i wartosc typu string do map1 stosujemy wyrazenie
+Aby wstawić klucz typu int i wartość typu string do map1 stosujemy wyrażenie
 - map1.insert(100, "WSTE");
 - map1.insert(map<int, string>::value_type("WSTE", 100));
 + map1.insert(map<int, string>::value_type(100, "WSTE"));
@@ -33,15 +32,14 @@ Aby wstawic klucz typu int i wartosc typu string do map1 stosujemy wyrazenie
 
 
 
-Który kontener jest wydajny jezeli dodaje sie nowe elementy do jego konca, ale jest malo wydajny,gdy dodaje sie elementy w kazde inne miejsce
-+ vector
-- deque
+W którym kontenerze przeszukiwanie jest najszybsze ?
+- vector
++ unordered_map
 - list
 - set
 
-W których z ponizszych kontenerów elementy sa sortowane wedug klucza
-
+W których z poniższych kontenerów elementy są sortowane według klucza
 + set
 - pair
 - tuple
-- Zadne z powyzszych
+- żadne z powyższych
