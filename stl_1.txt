@@ -12,34 +12,34 @@
 
 std::myVector.back()
 - Zwraca pierwszy element wektora
-+ Zwraca referncje na ostatni element wektora
-- Zwraca iteraor na ostatni element wektora
-- Dodaje element do konca wektora
++ Zwraca referencję na ostatni element wektora
+- Zwraca iterator na ostatni element wektora
+- Dodaje element do końca wektora
 
 
-Jaka jest róznica pomiedzy array a vector
+Jaka jest różnica pomiędzy array a vector
 - Array inicjowany jest 0 a vector nie
-+ Array ma okreslona wielkosc a vector moze ja zmieniac dynamicznie
-- Vector ma okreslona wielkosc a array moze ja zmieniac dynamicznie
-- Array zajmuje wiecej miejsca niz odpowiadajacy mu wektor
++ Array ma określoną wielkość a vector może ją zmieniać dynamicznie
+- Vector ma okresloną wielkość a array może ją zmieniać dynamicznie
+- Array zajmuje więcej miejsca niż odpowiadający mu wektor
 
 
-Jak wydrukowac pierwszy element wektora myVector
+Jak wydrukować pierwszy element wektora myVector
 - std::cout<<myVector.at(0);
 - std::cout<<myVector[0];
 - std::cout<<myVector.front();
-+ Wszystkie odpowiedzi sa prawidlowe
++ Wszystkie odpowiedzi sa prawidłowe
 
 
 Czym jest iterator w STL
-+ Obiektem
-- Wskaznikiem
++ Obiektem,który wskazuje na inny obiekt
+- Zwykłym wskaźnikiem
 - Adresem
-- Klasa
+- Klasą
 
 
-W jaki sposób mozna jednoczesnie usunac wszystkie elementy z mapy?
-- Zamienic element na lancuch pusty
-- Wywolac metode erase;
-- Wywolac metode empty;
-+ Wywolac metode clear;
+W jaki sposób można jednocześnie usunąć wszystkie elementy z mapy?
+- Zamienić element na lancuch pusty
+- Wywołać metodę erase;
+- Wywołać metodę empty;
++ Wywołać metodę clear;
