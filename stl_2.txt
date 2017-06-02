@@ -10,38 +10,36 @@
 
 #Kamil Frelichowski, pytania STL zestaw 2
 
-Który z ponizszych zapisów poprawnie definiuje iterator, którego mozna uzyc z wektorem calkowitym vector<int>
+Który z poniższych zapisów poprawnie definiuje iterator, którego można użyć z wektorem całkowitym vector<int>
 - iterator<int> itr;
 - vector::iterator  itr;
 + vector<int>::iterator itr;
 - vector<int>::iterator<int>itr;
 
 
-Który z ponizszych zapisów udostepnia klucz elementu, przy którym w danym mmencie znajduje sie itarator na mapie?
-
+Który z poniższych zapisów udostępnia klucz elementu, przy którym w danym momencie znajduje się iterator na mapie?
 - itr.first
 + itr->first
 - itr->key
 - itr.key
 
 
-Które z ponizszych metod wystepuja w klasie stack
+Które z poniższych metod nie występują w klasie stack
 - pop()
 - top()
 - push(element)
-+ A i C prawidlowe
++ add()
 
 
-Które z ponizszych sa konterenami sekwencyjnymi ?
-
+Które z poniższych są kontenerami sekwencyjnymi ?
 + List
 - Deque
 - Map
 - Set
 
 
-Które z ponizszych kontenerów uzywaja iteratorów
+Które z poniższych kontenerów używają iteratorów
 - List
 - Deque
 - Multimap
-+ Wszystkie z powyzszych
++ Wszystkie z powyższych
