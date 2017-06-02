@@ -77,39 +77,33 @@ Kod: int i = 1; i++; ++i; i--; printf("%d", i); wyprintuje:
 #Kamil Frelichowski, pytania cpp zestaw 1
 
 Jaki będzie output po zastosowaniu wyrażenia: static int a; std::cout<<a;
-
 -Błąd kompilacji
 -Undefined behaviour
 +0
 -Puste okno konsoli
 
-
-Która z poniższych instrukcji łączy dwa stringi
-
-- append();
+Która metoda z poniższych dodaje jeden string do drugiego
+- appstr();
 - stringadd();
 + strcat();
 - stradd();
 
 
-Które wyrażenie z ponizszych jest adresem pierwszego elementu tablicy tab[100]
-
+Które wyrażenie z poniższych jest adresem zerowego elementu tablicy tab[100]
 - tab[]
 + tab
 - &tab
 - tab[1]
 
 
-Jaką wartość zwraca destruktor
-
-- wskaznik do klasy
+Jaka wartość zwraca destruktor
+- wskaźnik do klasy
 - obiekt klasy
-- status code informujacy czy klasa zostala zniszczona
-+ destruktor nie zwraca wartości
+- status code informujący czy klasa została zniszczona
++ destruktor nic nie zwraca
 
 
 Jakiego typu jest argv w int main (int argc, char *argv[])
-
 - char *
 - int
 + char**
