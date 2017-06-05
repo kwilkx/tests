@@ -74,20 +74,20 @@ Co zrobi funkcja push() w queque:
 
 #Konrad A., pytania STL zestaw 1
 Kontener to:
-+ struktura danych
-- klasa virtualna
-- zmienna
-- zadne z powyzszych
++ wszystkie odpowiedzi sa poprawne
+- struktura danych
+- klasa 
+- dynamiczna tablica
 
-Aby moc skorzystac z kontenera stos w przestrzeni std w C++, nalezy dolaczyc plik naglowkowy:
+Aby mozna bylo dokonywac operacji na stosie, nalezy dolaczyc biblioteke:
++ #include <stack>
 - #include <math>
 - #include <iostream>
-+ #include <stack>
 - zadne z powyzszych
 
 Metoda ktora służy do odczytania lub modyfikacji wartości umieszczonej na szczycie stosu to:
-- push
 + top
+- push
 - cout
 - zadne z powyzszych
 
