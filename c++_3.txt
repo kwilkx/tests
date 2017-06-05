@@ -71,41 +71,6 @@ Destruktor dla class MojaKlasa to:
 - MojaKlasa(destroy);
 - &MojaKlasa();
 
-#Kamil Frelichowski, pytania cpp zestaw 3
-
-Mamy następujace wyrażenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwróci:
-- Wartość zmiennej tel
-- Adres zmiennej tel
-+ Adres wskaźnika wsk
-- Undefined behaviour
-
-
-Mamy literal const char *s= "Tablica charow". std::cout<<s; wyswietli
-- Adres wskaźnika s
-+ Cały literał
-- Pierwszą literę literału
-- Błąd,gdyż nie wpisano jawnie znaku \0
-
-Gdy stosujemy typ referencyjny:
-+ Referencja jest na stosie a obiekt na stercie
-- Referencja i obiekt są na stosie
-- Referencja i obiekt są na stercie
-- Referencja jest na stercie a obiekt na stosie
-
-Wyrażenie MyFun(int funArg=0) {} dla klasy Myfun ;, to:
-- Zwykły konstruktor
-- Konstruktor kopiujący
-+ Konstruktor domyślny
-- Deklaracja funkcji
-
-Lista inicjalizacyjna konstruktora musi byc użyta
-- Gdy pole klasy zadeklarowane jest jako stałe 
-- Gdy pole klasy jest referencją
-- Gdy polem klasy jest obiekt
-+ Każde z powyższych
-
-
-
 #Konrad A., pytania cpp zestaw 3
 W jaki sposób dokonujemy jawnego wywołania konstruktora:
 + nazwa_klasy(argumenty)
@@ -137,5 +102,34 @@ Konstruktor sluzy do:
 - usuwania obiektu z pamieci
 - konstruowania metod
 
+#Kamil Frelichowski, pytania cpp zestaw 3
+Mamy następujace wyrażenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwróci:
+- Wartość zmiennej tel
+- Adres zmiennej tel
++ Adres wskaźnika wsk
+- Undefined behaviour
 
+Mamy literal const char *s= "Tablica charow". std::cout<<s; wyswietli
+- Adres wskaźnika s
++ Cały literał
+- Pierwszą literę literału
+- Błąd,gdyż nie wpisano jawnie znaku \0
+
+Gdy stosujemy typ referencyjny:
++ Referencja jest na stosie a obiekt na stercie
+- Referencja i obiekt są na stosie
+- Referencja i obiekt są na stercie
+- Referencja jest na stercie a obiekt na stosie
+
+Wyrażenie MyFun(int funArg=0) {} dla klasy Myfun ;, to:
+- Zwykły konstruktor
+- Konstruktor kopiujący
++ Konstruktor domyślny
+- Deklaracja funkcji
+
+Lista inicjalizacyjna konstruktora musi byc użyta
+- Gdy pole klasy zadeklarowane jest jako stałe 
+- Gdy pole klasy jest referencją
+- Gdy polem klasy jest obiekt
++ Każde z powyższych
 
