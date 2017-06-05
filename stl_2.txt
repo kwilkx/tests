@@ -103,13 +103,11 @@ Rbegin zwraca iterator odwrotny wskazujacy na:
 - zadna z powyzszych 
 
 #Kamil Frelichowski, pytania STL zestaw 2
-
 Który z poniższych zapisów poprawnie definiuje iterator, którego można użyć z wektorem całkowitym vector<int>
 - iterator<int> itr;
 - vector::iterator  itr;
 + vector<int>::iterator itr;
 - vector<int>::iterator<int>itr;
-
 
 Który z poniższych zapisów udostępnia klucz elementu, przy którym w danym momencie znajduje się iterator na mapie?
 - itr.first
@@ -117,20 +115,17 @@ Który z poniższych zapisów udostępnia klucz elementu, przy którym w danym m
 - itr->key
 - itr.key
 
-
 Które z poniższych metod nie występują w klasie stack
 - pop()
 - top()
 - push(element)
 + add()
 
-
 Które z poniższych są kontenerami sekwencyjnymi ?
 + List
 - Deque
 - Map
 - Set
-
 
 Które z poniższych kontenerów używają iteratorów
 - List
