@@ -8,40 +8,6 @@
 
 # Proszę dopisywać swoje pytania
 
-#Kamil Frelichowski, pytania STL zestaw 3
-
-Jak podczas korzystania z iteratora sprawdzisz, czy dotarłeś do ostatniej iteracji?
-- Porównam iterator z wartością NULL
-+ Porównam iterator z wartością wywołania metody end() dla kontenera, po którym iteruję
-- Porównam iterator z wartościa 0
-- Porównam iterator z wartościa wywołania metody begin() dla kontenera, po którym iteruje
-
-
-Aby znaleźć konkretny element w kontenerze set s należy zastosować:
-- s.search(element)
-+ s.find(element)
-- search(s, element)
-- find(s, element)
-
-
-Aby wstawić klucz typu int i wartość typu string do map1 stosujemy wyrażenie
-- map1.insert(100, "WSTE");
-- map1.insert(map<int, string>::value_type("WSTE", 100));
-+ map1.insert(map<int, string>::value_type(100, "WSTE"));
-- map1.insert("WSTE", 100);
-
-W którym kontenerze przeszukiwanie jest najszybsze ?
-- vector
-+ unordered_map
-- list
-- set
-
-W których z poniższych kontenerów elementy są sortowane według klucza
-+ set
-- pair
-- tuple
-- żadne z powyższych
-
 # Paweł D., pytania STL zestaw 3
 multiset od set rozni sie:
 - tylko nazwa
@@ -104,5 +70,38 @@ Kontenery map oraz multimap:
 - Sa funkcja statyczna
 - Wszystkie odpowiedzi sa bledne
 
+#Kamil Frelichowski, pytania STL zestaw 3
+
+Jak podczas korzystania z iteratora sprawdzisz, czy dotarłeś do ostatniej iteracji?
+- Porównam iterator z wartością NULL
++ Porównam iterator z wartością wywołania metody end() dla kontenera, po którym iteruję
+- Porównam iterator z wartościa 0
+- Porównam iterator z wartościa wywołania metody begin() dla kontenera, po którym iteruje
+
+
+Aby znaleźć konkretny element w kontenerze set s należy zastosować:
+- s.search(element)
++ s.find(element)
+- search(s, element)
+- find(s, element)
+
+
+Aby wstawić klucz typu int i wartość typu string do map1 stosujemy wyrażenie
+- map1.insert(100, "WSTE");
+- map1.insert(map<int, string>::value_type("WSTE", 100));
++ map1.insert(map<int, string>::value_type(100, "WSTE"));
+- map1.insert("WSTE", 100);
+
+W którym kontenerze przeszukiwanie jest najszybsze ?
+- vector
++ unordered_map
+- list
+- set
+
+W których z poniższych kontenerów elementy są sortowane według klucza
++ set
+- pair
+- tuple
+- żadne z powyższych
 
 
