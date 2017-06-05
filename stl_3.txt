@@ -71,20 +71,17 @@ Kontenery map oraz multimap:
 - Wszystkie odpowiedzi sa bledne
 
 #Kamil Frelichowski, pytania STL zestaw 3
-
 Jak podczas korzystania z iteratora sprawdzisz, czy dotarłeś do ostatniej iteracji?
 - Porównam iterator z wartością NULL
 + Porównam iterator z wartością wywołania metody end() dla kontenera, po którym iteruję
 - Porównam iterator z wartościa 0
 - Porównam iterator z wartościa wywołania metody begin() dla kontenera, po którym iteruje
 
-
 Aby znaleźć konkretny element w kontenerze set s należy zastosować:
 - s.search(element)
 + s.find(element)
 - search(s, element)
 - find(s, element)
-
 
 Aby wstawić klucz typu int i wartość typu string do map1 stosujemy wyrażenie
 - map1.insert(100, "WSTE");
