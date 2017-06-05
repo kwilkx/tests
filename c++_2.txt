@@ -71,6 +71,68 @@ Domyslnie dostep do wszystkich elementow klasy jest ustawiony na:
 - protected
 - topsecret
 
+# Pytania Filip
+Keyword "auto" oznacza że:
++ typ danych bedzie automatycznie okreslony przez kompilator
+- nie ma takiej konstrukcji w c++
+- funkcja nic nie zwraca
+- uzytkownik nie jest zainteresowany zwracana wartoscia, a dzieki 'auto' kompilator nie zwraca bledu przy niezdeklarowanym typie danych
+
+Co oznacza taki zapis int i = *ptr
++ dereferencja
+- referencja
+- alokacja pamieci
+- zadne z powyzszych
+
+Którego z operatorów użyjemy aby dostać się do atrybutu klasy:
+- ..
+- *
++ .
+- żadne z powyższych
+
+Konstruktor jest uzywany do:
+- tworzenia obiektow
+- tworzenia klas
++ przypisuje atrybutom wartosci startowe
+- zadne z powyzszych
+
+Dlaczego pętla for się nie wykona for(int i = 1, i < 10, i++):
+- poniewaz zmienna i trzeba rowniez zadeklarowac poza petla for
++ poniewaz zamiast przecinkow powinny byc sredniki
+- poniewaz musi wystapic preinkrementacja zamiast post.
+- zadne z powyzszych
+
+#Konrad A., pytania cpp zestaw 2
+Jakimi symbolami wprowadzamy komentarze w C++:
+- ^^ i ()
+- * i ++
+- \\ i \**\
++ // i /**/
+
+Instrukcja switch to instrukcja:
+- skoku
++ wyboru
+- interacyjna
+- warunkowa
+
+Wczytanie danych do zmiennej odbywa się poprzez:
+- writeln
++ cin>>
+- cin<<
+- cout>>
+
+Która etykieta oznacza, że deklarowane za nią składniki (funkcje i dane) są dostępne tylko z wnętrza klasy:
+- public
+- protected
++ private
+- nie ma takiej etykiety
+
+Operator zakresu to:
++ "::"
+- "*"
+- "/"
+- "^"
+
 #Kamil Frelichowski, pytania cpp zestaw 2
 
 Nieprawdą jest,że przy przeciążeniu dwóch funkcji:
