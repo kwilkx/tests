@@ -111,13 +111,11 @@ std::myVector.back()
 - Zwraca iterator na ostatni element wektora
 - Dodaje element do końca wektora
 
-
 Jaka jest różnica pomiędzy array a vector
 - Array inicjowany jest 0 a vector nie
 + Array ma określoną wielkość a vector może ją zmieniać dynamicznie
 - Vector ma okresloną wielkość a array może ją zmieniać dynamicznie
 - Array zajmuje więcej miejsca niż odpowiadający mu wektor
-
 
 Jak wydrukować pierwszy element wektora myVector
 - std::cout<<myVector.at(0);
@@ -125,13 +123,11 @@ Jak wydrukować pierwszy element wektora myVector
 - std::cout<<myVector.front();
 + Wszystkie odpowiedzi sa prawidłowe
 
-
 Czym jest iterator w STL
 + Obiektem,który wskazuje na inny obiekt
 - Zwykłym wskaźnikiem
 - Adresem
 - Klasą
-
 
 W jaki sposób można jednocześnie usunąć wszystkie elementy z mapy?
 - Zamienić element na lancuch pusty
