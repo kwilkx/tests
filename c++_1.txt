@@ -136,3 +136,34 @@ Operacje przypisania dokonujemy za pomocą znaku:
 - +
 - *
 
+#Kamil Frelichowski, pytania cpp zestaw 1
+Jaki bedzie output po zastosowaniu wyrazenia: static int a; std::cout<<a;
+-Blad kompilacji
+-Undefined behaviour
++0
+-Puste okno konsoli
+
+Ktora metoda z ponizszych dodaje jeden string do drugiego
+- appstr();
+- stringadd();
++ strcat();
+- stradd();
+
+Które wyrazenie z ponizszych jest adresem zerowego elementu tablicy tab[100]
+- tab[]
++ tab
+- &tab
+- tab[1]
+
+Jaka wartosc zwraca destruktor
+- wskaznik do klasy
+- obiekt klasy
+- status code informujacy czy klasa zostala zniszczona
++ destruktor nic nie zwraca
+
+
+Jakiego typu jest argv w int main (int argc, char *argv[])
+- char *
+- int
++ char**
+- to nie jest zmienna 

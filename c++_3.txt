@@ -87,21 +87,20 @@ Funkcja czysto wirtualna to taka funkcja ktora:
 Klasa, od której inna klasa dziedziczy to:
 + klasa bazowa
 - predykat
-- przwodnik
+- przewodnik
 - klasa pierwotna
 
 Wywolanie metody rysuj na rzecz obiektu pisak egzemplarza klasy malarz to:
-+ pisak.rysuj();
 - rysuj();
 - malarz.pisak();
++ pisak.rysuj();
 - malarz.rysuj();
 
 Konstruktor sluzy do:
-+ inicjalizacji wlasciwosci
 - odczytu pol klasy
++ inicjalizacji wlasciwosci
 - usuwania obiektu z pamieci
 - konstruowania metod
-
 
 #Magdalena B., pytania cpp zestaw 3
 
@@ -165,3 +164,35 @@ Jak uzyskac dostep do elementow skladowych wskaznika:
 + ->
 - *
 - zadne z powyzszych
+
+#Kamil Frelichowski, pytania cpp zestaw 3
+Mamy nastepujace wyrazenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwroci:
+- Wartosc zmiennej tel
+- Adres zmiennej tel
++ Adres wskaznika wsk
+- Undefined behaviour
+
+Mamy literal const char *s= "Tablica charow". std::cout<<s; wyswietli
+- Adres wskaznika s
++ Caly literal
+- Pierwsza litere literalu
+- Blad,gdyz nie wpisano jawnie znaku \0
+
+Gdy stosujemy typ referencyjny:
++ Referencja jest na stosie a obiekt na stercie
+- Referencja i obiekt sa na stosie
+- Referencja i obiekt sa na stercie
+- Referencja jest na stercie a obiekt na stosie
+
+Wyrazenie MyFun(int funArg=0) {} dla klasy Myfun ; to:
+- Zwykły konstruktor
+- Konstruktor kopiujacy
++ Konstruktor domyslny
+- Deklaracja funkcji
+
+Lista inicjalizacyjna konstruktora musi byc uzyta
+- Gdy pole klasy zadeklarowane jest jako stale 
+- Gdy pole klasy jest referencja
+- Gdy polem klasy jest obiekt
++ Kazde z powyzszych
+
