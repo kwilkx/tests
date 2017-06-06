@@ -1,4 +1,4 @@
-# To jest format pliku w którym zapisujemy pytania
+﻿# To jest format pliku w którym zapisujemy pytania
 # oraz 4 odpowiedzi z zaznaczeniem odpowiedniej
 # Niech + oznacza prawidłową odpowiedź
 # Znak - oznacza niepoprawną
@@ -136,3 +136,34 @@ Operacje przypisania dokonujemy za pomocą znaku:
 - +
 - *
 
+#Damian Cz., pytania cpp zestaw 1
+	
+1.Funkcja, która nic nie zwraca ma przed nazwa:
+- int
++ void
+- static
+- bool
+
+2.Czy można w jednej linii umieścić kilka instrukcji?
++ tak, nie jest to zalecane ze względu na nieczytelność kodu
+- tak, jednak niektóre kompilatory mogą sobie z takim kodem nie poradzić
+- nie
+- zadna z powyższych odpowiedzi nie jest prawidłowa
+
+3.Do czego służy linker? 
++ do połączenia kodu programu z określonymi bibliotekami. 
+- do przetłumaczenia kodu z języka programowania na język procesora
+- do tworzenia plików nagłówkowych
+- żadna z powyższych odpowiedzi nie jest prawidłowa
+
+4.Powołanie do życia obiektu obiekt1 następuje prze jego:
+- definicję
++ deklarację
+- rekurencję
+- żadne z powyższych
+
+5.Co znaczy, że dany operator ma wyższy priorytet niż inny?
+- jego operacja wykonywana jest z pominięciem pozostałych
+- oznacza, że stosowany jest wyłącznie w pętli for
++ zostanie wykonany najpierw
+- żadne z powyższych odpowiedzi nie jest prawidłowa

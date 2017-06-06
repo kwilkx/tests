@@ -1,4 +1,4 @@
-# To jest format pliku w którym zapisujemy pytania
+﻿# To jest format pliku w którym zapisujemy pytania
 # oraz 4 odpowiedzi z zaznaczeniem odpowiedniej
 # Niech + oznacza prawidłową odpowiedź
 # Znak - oznacza niepoprawną
@@ -134,4 +134,36 @@ Wybierz poprawny sposob usuwania elementow z konca wektora vector<int> values:
 - values.push_back();
 + values.pop_back();
 
+# Damian Cz., pytania STL zestaw 2
 
+1.Do obliczenia odległości między iteratorami służy:
+
++ funkcja distance () 
+- funkcja itter_swap()
+- funkcja next()
+- funkcja prev()
+
+2.Funkcja swap() służy do
+- zamienia kolejność elementów w kontenerze
++ zamienienia zawartości kontenerów tego samego typu
+- porównuje dwa kontenery 
+- żadna z powyższych nie jest prawdziwa
+
+3.Klasa <vector> celem optymalizacji zużycia pamięci udostępnia specjalizację dla jakiego typu elementów?
+- int
+- bool
++ dobule
+- nie ma takie specjalizacji
+
+4.Różnica między vectorem a kolejką deque  polega na tym, że:
+- vecotr dedykowany jest wyłącznie do elementów typu bool
++ kolejka deque umożliwia szybkie wstawianie elementów zarówno na końcu jak i na początku kontenera
+- nie różnią się między sobą
+- żadne z powyższych
+
+5.Aby sprawdzic czy mojVector jest pusty uzyjemy
+
+- myVector.swap()
+- myVector.clear()
+- myVector.erase()
++ myVector.empty()

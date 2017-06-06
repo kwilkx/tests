@@ -1,4 +1,4 @@
-# To jest format pliku w którym zapisujemy pytania
+﻿# To jest format pliku w którym zapisujemy pytania
 # oraz 4 odpowiedzi z zaznaczeniem odpowiedniej
 # Niech + oznacza prawidłową odpowiedź
 # Znak - oznacza niepoprawną
@@ -136,4 +136,34 @@ Wybierz poprawny sposob dodawania elementow (np. 5) na koncu wektora vector<int>
 + values.push_back(5);
 - values.pop_back(5);
  
+# Damian Cz., pytania STL zestaw 1
 
+1.Plik nagłówkowy math.h odpowiada za:
+- funkcje obsługi ekranu i klawiatury
+- działania na łańcuchach znaków
++ funkcje matematyczne
+- żadne z powyższych
+
+2.Klasa unique_ptr:
+- to klasa definiowana w pliku nagłówkowym <memory>
+- to, który wskaźnik gwarantuje istnienie dokładnie jednego wskaźnika do obiektu wskazywanego w danym momencie
+- to tzw. inteligentny wskaźnik
++ wszystkie odpowiedzi są prawidłowe
+
+3.Do porównania równości vectorów c1 i c2 używa się operacji:
++ c1 == c2
+- c1 = c2
+- swap(c1,c2)
+- nie ma możliwości porównywania zawartości vectorów 
+
+4.Różnica między mapami a multimapami polega na:
++ multimapy dopuszczają powtórzenia
+- kontenery map nie używają pary klucz wartość
+- kontenery multimap nie używają pary klucz wartość
+- żadne z powyższych
+
+5.Rozwiniecie skrotu STL to:
+- system template library
++ standard template library
++ static template library
+- zadne z powyzszych

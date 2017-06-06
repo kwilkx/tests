@@ -1,4 +1,4 @@
-# To jest format pliku w którym zapisujemy pytania
+﻿# To jest format pliku w którym zapisujemy pytania
 # oraz 4 odpowiedzi z zaznaczeniem odpowiedniej
 # Niech + oznacza prawidłową odpowiedź
 # Znak - oznacza niepoprawną
@@ -133,3 +133,35 @@ Operator zakresu to:
 - "/"
 - "^"
 
+#Damian Cz., pytania cpp zestaw 2
+
+1.Inicjalizacja int tablica[3]={1,2}; spowoduje że: 
+- ostatni element tablicy będzie miał wartość 0 
++ utworzona zostanie tablica dwuelementowa 
+- ostatni element tablicy będzie miał wartość nieokreśloną
+- żadne z powyższych
+
+2.Wskaż nieprawidłowe deklarację funkcji:
+- int dcz();
++ dcz(int);
+- void dcz(int liczba);
+- wszystkie sa poprawne
+
+3.Jak liczba pojawi się na ekranie? #include <iostream> using namespace std; int main() { int a = 3; cout << (a=6) << endl; system("pause"); }
+
+- 7
++ 6
+- 3
+- zadna z powyższych
+
+4.  Co to sa argumenty wywołania funkcji?
++ argumenty, które  z każdym jej wywołaniem mogą one być inne
+- zunifikowane argumenty, którymi funkcje testowane są przez kompilator
+- argumenty, którymi są statyczne zmienne w kodzie
+- żadne z powyższych odpowiedzi nie jest prawidłowa
+
+5. Klasa, od ktorej inna klasa dziedziczy to:
+- predykat
+- metoda
+- klasa dziedziczna
++ klasa bazowa

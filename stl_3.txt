@@ -1,4 +1,4 @@
-# To jest format pliku w którym zapisujemy pytania
+﻿# To jest format pliku w którym zapisujemy pytania
 # oraz 4 odpowiedzi z zaznaczeniem odpowiedniej
 # Niech + oznacza prawidłową odpowiedź
 # Znak - oznacza niepoprawną
@@ -102,3 +102,37 @@ Wytlumacz roznice miedzy std::map a std::set:
 - std::map jest zdecydowanie wolniejsza
 + std::map posiada klucz oraz wartosc, std::set posiada tylko klucz 
 - std::set posiada klucz oraz wartosc, std::map posiada tylko klucz
+
+# Damian Cz., pytania STL zestaw 3
+
+1.Czy jako kontenery możemy wykorzystywać zwykłe tablice?
++ tak, ale zwykle nie są one klasami i nie udostępniają tym samym nie udostępniają funkcji składowych begin() i end()
+- można, ale do projektów w domu, zawodowo byłbyś skazany na wieczne potępienie
+- nie jest to możliwe
+- żadne z powyższych
+
+2. W funkcji składowej list forward_list Forwardlist:erase_after(const_iterator pos):
+- usuwa element bezpośrednio za pozycją iteratora pos
+- zwraca pozycję następnego elementu (lub wartość end())
+- wywołuje destruktor wobec usuwanego elemntu
++ wszystkie powyższe są prawidłowe
+
+
+3.multiset od set rożni sie:
+-  nazwa
++ w multiset elementy mogą się powtarzać
+- w multiset elementy są nieposortowane
+- żadne z powyższych
+
+4.Sekcja przeznaczona do przechowywania zmiennych lokalnych to:
+- heap
++ stack
+- stack i heap
+- zadme z powyższych
+
+5. Capality zwraca:
+- iterator wskazujacy na element
+- referencje na ostatni element w kontenerze
+- minimalna liczbe elementow jaka moze pomiescic kontener bez  wykonywania realokacji pamieci
++ maksymalna dlugosc tablicy kontenera wyrazona w liczbie elementow
+
