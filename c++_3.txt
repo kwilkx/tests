@@ -103,33 +103,33 @@ Konstruktor sluzy do:
 - konstruowania metod
 
 #Kamil Frelichowski, pytania cpp zestaw 3
-Mamy następujace wyrażenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwróci:
-- Wartość zmiennej tel
+Mamy nastepujace wyrazenie: int tel=12345; int *wsk=&tel; int **wsk2=&wsk; std::cout<< *wsk2 zwroci:
+- Wartosc zmiennej tel
 - Adres zmiennej tel
-+ Adres wskaźnika wsk
++ Adres wskaznika wsk
 - Undefined behaviour
 
 Mamy literal const char *s= "Tablica charow". std::cout<<s; wyswietli
-- Adres wskaźnika s
-+ Cały literał
-- Pierwszą literę literału
-- Błąd,gdyż nie wpisano jawnie znaku \0
+- Adres wskaznika s
++ Caly literal
+- Pierwsza litere literalu
+- Blad,gdyz nie wpisano jawnie znaku \0
 
 Gdy stosujemy typ referencyjny:
 + Referencja jest na stosie a obiekt na stercie
-- Referencja i obiekt są na stosie
-- Referencja i obiekt są na stercie
+- Referencja i obiekt sa na stosie
+- Referencja i obiekt sa na stercie
 - Referencja jest na stercie a obiekt na stosie
 
-Wyrażenie MyFun(int funArg=0) {} dla klasy Myfun ;, to:
+Wyrazenie MyFun(int funArg=0) {} dla klasy Myfun ; to:
 - Zwykły konstruktor
-- Konstruktor kopiujący
-+ Konstruktor domyślny
+- Konstruktor kopiujacy
++ Konstruktor domyslny
 - Deklaracja funkcji
 
-Lista inicjalizacyjna konstruktora musi byc użyta
-- Gdy pole klasy zadeklarowane jest jako stałe 
-- Gdy pole klasy jest referencją
+Lista inicjalizacyjna konstruktora musi byc uzyta
+- Gdy pole klasy zadeklarowane jest jako stale 
+- Gdy pole klasy jest referencja
 - Gdy polem klasy jest obiekt
-+ Każde z powyższych
++ Kazde z powyzszych
 
