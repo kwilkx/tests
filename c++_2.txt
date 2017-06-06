@@ -133,3 +133,33 @@ Operator zakresu to:
 - "/"
 - "^"
 
+#Kamil Frelichowski, pytania cpp zestaw 2
+Nieprawda jest,ze przy przeciazeniu dwoch funkcji:
++ Funkcje moga roznic sie tylko typem zwracanym
+- Funkcje moga roznic sie typem argumentow
+- Funkcje moga roznic sie iloscia argumentow
+- Funkcje moga roznic sie typem argumentow oraz typem zwracanym
+
+Konstruktor
+- Zwraca typ
+- Moze znajdowac sie w sekcji private
+- Nie moze być przeciazony
++ Nie moze być dziedziczony
+
+Automatycznie generowany konstruktor kopiujacy jest zawsze:
++ public
+- private
+- protected
+- public,ale tylko w klasie bazowej
+
+Nieprawda jest, ze klasa abstrakcyjna
++ Musi miec wszystkie metody czysto wirtualne
+- Wystarczy jedna metoda czysto wirtualna
+- Nie mozna utworzyc obiektu takiej klasy
+- Jezeli posiada jedynie klasy czysto abstrakcyjne to jest interfejsem
+
+Destruktor wirtualny
++ Nalezy stosowac zawsze w klasie bazowej
+- Nalezy stosowac tylko,gdy  klasa posiada przynjamniej jedna metode wirtualna
+- Nie moze byc czysto wirtualny
+- Nalezy stosowac w klasie wystepuje konstruktor wirtualny
