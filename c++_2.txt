@@ -134,32 +134,32 @@ Operator zakresu to:
 - "^"
 
 #Kamil Frelichowski, pytania cpp zestaw 2
-Nieprawdą jest,że przy przeciążeniu dwóch funkcji:
-+ Funkcje mogą różnić się tylko typem zwracanym
-- Funkcje moga różnić się typem argumentów
-- Funkcje mogą róznić się ilością argumentów
-- Funkcje mogą różnić się typem argumentów oraz typem zwracanym
+Nieprawda jest,ze przy przeciazeniu dwoch funkcji:
++ Funkcje moga roznic sie tylko typem zwracanym
+- Funkcje moga roznic sie typem argumentow
+- Funkcje moga roznic sie iloscia argumentow
+- Funkcje moga roznic sie typem argumentow oraz typem zwracanym
 
 Konstruktor
 - Zwraca typ
-- Może znajdować się w sekcji private
-- Nie może być przeciążony
-+ Nie może być dziedziczony
+- Moze znajdowac sie w sekcji private
+- Nie moze być przeciazony
++ Nie moze być dziedziczony
 
-Automatycznie generowany konstruktor kopiujący jest zawsze:
+Automatycznie generowany konstruktor kopiujacy jest zawsze:
 + public
 - private
 - protected
 - public,ale tylko w klasie bazowej
 
-Nieprawdą jest, że klasa abstrakcyjna
+Nieprawda jest, ze klasa abstrakcyjna
 + Musi miec wszystkie metody czysto wirtualne
 - Wystarczy jedna metoda czysto wirtualna
-- Nie można utworzyć obiektu takiej klasy
-- Jeżeli posiada jedynie klasy czysto abstrakcyjne to jest interfejsem
+- Nie mozna utworzyc obiektu takiej klasy
+- Jezeli posiada jedynie klasy czysto abstrakcyjne to jest interfejsem
 
 Destruktor wirtualny
-+ Należy stosować zawsze w klasie bazowej
-- Należy stosować tylko,gdy  klasa posiada przynjamniej jedną metodę wirtualną
-- Nie może być czysto wirtualny
-- Należy stosować w klasie występuje konstruktor wirtualny
++ Nalezy stosowac zawsze w klasie bazowej
+- Nalezy stosowac tylko,gdy  klasa posiada przynjamniej jedna metode wirtualna
+- Nie moze byc czysto wirtualny
+- Nalezy stosowac w klasie wystepuje konstruktor wirtualny
