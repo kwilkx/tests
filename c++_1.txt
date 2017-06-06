@@ -138,31 +138,28 @@ Operacje przypisania dokonujemy za pomocą znaku:
 - *
 
 #Kamil Frelichowski, pytania cpp zestaw 1
-
-Jaki będzie output po zastosowaniu wyrażenia: static int a; std::cout<<a;
--Błąd kompilacji
+Jaki bedzie output po zastosowaniu wyrazenia: static int a; std::cout<<a;
+-Blad kompilacji
 -Undefined behaviour
 +0
 -Puste okno konsoli
 
-Która metoda z poniższych dodaje jeden string do drugiego
+Ktora metoda z ponizszych dodaje jeden string do drugiego
 - appstr();
 - stringadd();
 + strcat();
 - stradd();
 
-
-Które wyrażenie z poniższych jest adresem zerowego elementu tablicy tab[100]
+Które wyrazenie z ponizszych jest adresem zerowego elementu tablicy tab[100]
 - tab[]
 + tab
 - &tab
 - tab[1]
 
-
-Jaka wartość zwraca destruktor
-- wskaźnik do klasy
+Jaka wartosc zwraca destruktor
+- wskaznik do klasy
 - obiekt klasy
-- status code informujący czy klasa została zniszczona
+- status code informujacy czy klasa zostala zniszczona
 + destruktor nic nie zwraca
 
 
