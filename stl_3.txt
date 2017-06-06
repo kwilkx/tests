@@ -71,34 +71,34 @@ Kontenery map oraz multimap:
 - Wszystkie odpowiedzi sa bledne
 
 #Kamil Frelichowski, pytania STL zestaw 3
-Jak podczas korzystania z iteratora sprawdzisz, czy dotarłeś do ostatniej iteracji?
-- Porównam iterator z wartością NULL
-+ Porównam iterator z wartością wywołania metody end() dla kontenera, po którym iteruję
-- Porównam iterator z wartościa 0
-- Porównam iterator z wartościa wywołania metody begin() dla kontenera, po którym iteruje
+Jak podczas korzystania z iteratora sprawdzisz, czy dotarles do ostatniej iteracji?
+- Porownam iterator z wartoscia NULL
++ Porownam iterator z wartoscia wywolania metody end() dla kontenera, po ktorym iteruje
+- Porownam iterator z wartoscia 0
+- Porownam iterator z wartoscia wywolania metody begin() dla kontenera, po ktorym iteruje
 
-Aby znaleźć konkretny element w kontenerze set s należy zastosować:
+Aby znalezc konkretny element w kontenerze set s nalezy zastosowac:
 - s.search(element)
 + s.find(element)
 - search(s, element)
 - find(s, element)
 
-Aby wstawić klucz typu int i wartość typu string do map1 stosujemy wyrażenie
+Aby wstawic klucz typu int i wartosc typu string do map1 stosujemy wyrazenie
 - map1.insert(100, "WSTE");
 - map1.insert(map<int, string>::value_type("WSTE", 100));
 + map1.insert(map<int, string>::value_type(100, "WSTE"));
 - map1.insert("WSTE", 100);
 
-W którym kontenerze przeszukiwanie jest najszybsze ?
+W ktorym kontenerze przeszukiwanie jest najszybsze ?
 - vector
 + unordered_map
 - list
 - set
 
-W których z poniższych kontenerów elementy są sortowane według klucza
+W ktorych z ponizszych kontenerow elementy sa sortowane wedlug klucza
 + set
 - pair
 - tuple
-- żadne z powyższych
+- zadne z powyzszych
 
 
