@@ -169,32 +169,32 @@ Jak uzyskac dostep do elementow skladowych wskaznika:
 
 #Damian Cz., pytania cpp zestaw 3
 
-1.W klasie std:string funkcja size”
-- wskazuje rozmiar uzytej pamięci dla danego stringu
+W klasie std:string funkcja size:
+- wskazuje rozmiar uzytej pamieci dla danego stringu
 + zwraca liczbe znakow danego stringa
-- wskazuje rozmiar pamięci pojedynczego stringa
-- w tej kasie nie jest możliwa do uzycia
+- wskazuje rozmiar pamieci pojedynczego stringa
+- w tej kasie nie jest mozliwa do uzycia
 
-2.Czy funkcja może wywoływać sama siebie: 
+Czy funkcja moze wywoływax sama siebie: 
 + tak, proces taki nazywa się rekurencja
 - tak, proces taki nazywa się polimorfizmem
-- tak, ale dopiero w C++14
-- nie, nie jest to możliwe
+- tak, ale dopiero w C++ 14
+- nie, nie jest to mozliwe
 
-3.Czy można stworzyć w klasie funkcję składową o takiej samej nazwie, jak istnieją funkcja globalna? 
-+ tak, będzie to tzw. zasłonięcie nazwy
-- jest to błąd
-- nie jest to możliwe
-- tak, ale musimy stworzyć inne argumenty formalne
+Czy mozna stworzyc w klasie funkcje skladowa o takiej samej nazwie, jak istniejaca funkcja globalna? 
++ tak, bedzie to tzw. zasłonięcie nazwy
+- jest to bład
+- nie jest to mozliwe
+- tak, ale musimy stworzyc inne argumenty formalne
 
-4. Ktory z elementow dziedziczony jest przez klase pochodna:
+Ktory z elementow dziedziczony jest przez klase pochodna:
 - konstruktor
 - destruktor
 + funkcje
 - operator przypisania
 
-5. Funkcja czysto wirtualna to taka funkcja ktora:
+Funkcja czysto wirtualna to taka funkcja ktora:
 + nie ma definicji
 - nie ma deklaracji
 - nie przewiduje argumentow
-- wszystkie powyższe odpowiedzi są prawidłowe
+- wszystkie powyzsze odpowiedzi sa prawidłowe

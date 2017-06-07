@@ -138,32 +138,32 @@ Operacje przypisania dokonujemy za pomocą znaku:
 
 #Damian Cz., pytania cpp zestaw 1
 	
-1.Funkcja, która nic nie zwraca ma przed nazwa:
+Funkcja, ktora nic nie zwraca ma przed nazwa:
 - int
 + void
 - static
 - bool
 
-2.Czy można w jednej linii umieścić kilka instrukcji?
-+ tak, nie jest to zalecane ze względu na nieczytelność kodu
-- tak, jednak niektóre kompilatory mogą sobie z takim kodem nie poradzić
+Czy mozna w jednej linii umiescic kilka instrukcji?
++ tak, nie jest to zalecane ze względu na nieczytelnosc kodu
+- tak, jednak niektore kompilatory moga sobie z takim kodem nie poradzic
 - nie
-- zadna z powyższych odpowiedzi nie jest prawidłowa
+- zadna z powyzszych odpowiedzi nie jest prawidłowa
 
-3.Do czego służy linker? 
-+ do połączenia kodu programu z określonymi bibliotekami. 
-- do przetłumaczenia kodu z języka programowania na język procesora
-- do tworzenia plików nagłówkowych
-- żadna z powyższych odpowiedzi nie jest prawidłowa
+Do czego słuzy linker? 
++ do połączenia kodu programu z okrezlonymi bibliotekami
+- do przetlumaczenia kodu z jezyka programowania na jezyk procesora
+- do tworzenia plikow naglowkowych
+- zadna z powyzszych odpowiedzi nie jest prawidlowa
 
-4.Powołanie do życia obiektu obiekt1 następuje prze jego:
+Powolanie do zycia obiektu obiektu nastepuje przez jego:
 - definicję
-+ deklarację
-- rekurencję
-- żadne z powyższych
++ deklaracje
+- rekurencje
+- zadne z powyzszych
 
-5.Co znaczy, że dany operator ma wyższy priorytet niż inny?
-- jego operacja wykonywana jest z pominięciem pozostałych
-- oznacza, że stosowany jest wyłącznie w pętli for
+Co znaczy, ze dany operator ma wyzszy priorytet niz inny?
+- jego operacja wykonywana jest z pominieciem pozostalych
+- oznacza, ze stosowany jest wyłacznie w petli for
 + zostanie wykonany najpierw
-- żadne z powyższych odpowiedzi nie jest prawidłowa
+- zadna z powyzszych odpowiedzi nie jest prawidlowa

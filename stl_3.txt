@@ -105,34 +105,33 @@ Wytlumacz roznice miedzy std::map a std::set:
 
 # Damian Cz., pytania STL zestaw 3
 
-1.Czy jako kontenery możemy wykorzystywać zwykłe tablice?
-+ tak, ale zwykle nie są one klasami i nie udostępniają tym samym nie udostępniają funkcji składowych begin() i end()
-- można, ale do projektów w domu, zawodowo byłbyś skazany na wieczne potępienie
-- nie jest to możliwe
-- żadne z powyższych
+Czy jako kontenery mozemy wykorzystywac zwykle tablice?
++ tak, ale zwykle nie sa one klasami i nie udostepniaja tym samym nie udostepniaja funkcji składowych begin() i end()
+- mozna, ale do projektow w domu, zawodowo bylbys skazany na wieczne potepienie
+- nie jest to mozliwe
+- zadne z powyzszych
 
-2. W funkcji składowej list forward_list Forwardlist:erase_after(const_iterator pos):
-- usuwa element bezpośrednio za pozycją iteratora pos
-- zwraca pozycję następnego elementu (lub wartość end())
-- wywołuje destruktor wobec usuwanego elemntu
-+ wszystkie powyższe są prawidłowe
+W funkcji skladowej list forward_list Forwardlist:erase_after(const_iterator pos):
+- usuwa element bezposrednio za pozycjs iteratora pos
+- zwraca pozycje nastepnego elementu (lub wartosc end())
+- wywoluje destruktor wobec usuwanego elemntu
++ wszystkie powyzsze sa prawidlowe
 
 
-3.multiset od set rożni sie:
--  nazwa
-+ w multiset elementy mogą się powtarzać
-- w multiset elementy są nieposortowane
-- żadne z powyższych
+multiset od set rozni sie:
+- nazwa
++ w multiset elementy moga sie powtarzac
+- w multiset elementy sa nieposortowane
+- zadne z powyzszych
 
-4.Sekcja przeznaczona do przechowywania zmiennych lokalnych to:
+sekcja przeznaczona do przechowywania zmiennych lokalnych to:
 - heap
 + stack
 - stack i heap
 - zadme z powyższych
 
-5. Capality zwraca:
+Capality zwraca:
 - iterator wskazujacy na element
 - referencje na ostatni element w kontenerze
 - minimalna liczbe elementow jaka moze pomiescic kontener bez  wykonywania realokacji pamieci
 + maksymalna dlugosc tablicy kontenera wyrazona w liczbie elementow
-

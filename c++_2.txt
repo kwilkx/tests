@@ -135,32 +135,31 @@ Operator zakresu to:
 
 #Damian Cz., pytania cpp zestaw 2
 
-1.Inicjalizacja int tablica[3]={1,2}; spowoduje że: 
-- ostatni element tablicy będzie miał wartość 0 
+Inicjalizacja int tablica[3]={1,2}; spowoduje ze: 
+- ostatni element tablicy bedzie mial wartosc 0 
 + utworzona zostanie tablica dwuelementowa 
-- ostatni element tablicy będzie miał wartość nieokreśloną
-- żadne z powyższych
+- ostatni element tablicy będzie mial wartosc nieokresloną
+- zadne z powyższych
 
-2.Wskaż nieprawidłowe deklarację funkcji:
+Wskaz nieprawidlowe deklaracje funkcji:
 - int dcz();
 + dcz(int);
 - void dcz(int liczba);
 - wszystkie sa poprawne
 
-3.Jak liczba pojawi się na ekranie? #include <iostream> using namespace std; int main() { int a = 3; cout << (a=6) << endl; system("pause"); }
-
+Jaka liczba pojawi sie na ekranie? #include <iostream> using namespace std; int main() { int a = 3; cout << (a=6) << endl; system("pause"); }
 - 7
 + 6
 - 3
 - zadna z powyższych
 
-4.  Co to sa argumenty wywołania funkcji?
-+ argumenty, które  z każdym jej wywołaniem mogą one być inne
-- zunifikowane argumenty, którymi funkcje testowane są przez kompilator
-- argumenty, którymi są statyczne zmienne w kodzie
-- żadne z powyższych odpowiedzi nie jest prawidłowa
+Co to sa argumenty wywolania funkcji?
++ argumenty, ktore  z kazdym jej wywolaniem moga byc inne
+- zunifikowane argumenty, ktorymi funkcje testowane sa przez kompilator
+- argumenty, ktorymi sa statyczne zmienne w kodzie
+- zadne z powyzszych odpowiedzi nie jest prawidlowa
 
-5. Klasa, od ktorej inna klasa dziedziczy to:
+Klasa, od ktorej inna klasa dziedziczy to:
 - predykat
 - metoda
 - klasa dziedziczna
