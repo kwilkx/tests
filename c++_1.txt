@@ -16,7 +16,7 @@
 - Przestrzen nazw
 - Funkcja
 
-Skladniki struktury domyslnie opatrzone sa etykieta:
+Skladniki struktury domyslnie opatrzone sa etykieta, ktora okresla ich poziom dostepu (widocznosc). Nazwa etykiety to:
 + public
 - protected
 - private
@@ -28,7 +28,7 @@ Ile argumentow moze przyjmowac destruktor klasy?
 - 2
 - dowolna liczbe
 
-Wyrazenie a.b oznacza:
+Wyrazenie a.b moze oznaczac:
 + skladowa b obiektu a
 - skladowa b obiektu wskazywanego przez wskaznik a
 - skladowa a obiektu b
@@ -48,17 +48,29 @@ Plik test.h do naszego kodu dolaczamy poprzez:
 - add "test.h" 
 - INCLUDE "test.h" 
 
-Funkcja, ktora wywoluje sama siebie to: 
-- blad programisty
+Zjawisko, kiedy funkcja wywoluje sama siebie to: 
+- dziedziczenie
 + rekurencja
 - polimorfizm
 - refaktoryzacja kodu
 
-Funkcja void foo(int& x, int y, char * z) zwraca:
-- adres
+Funkcja, ktora nie zwraca wartosci moze miec natepujaca definicje:
++ void bar()
+- void* baz(void)
+- double foo(void*)
+- auto qux() -> int
+
+void jest uzywany jako typ zwracany przez funkcje, gdy:
+- funkcja zwraca wartosc numeryczna
++ funkcja niczego nie zwraca
+- funkcja zwraca obiekt klasy
+- funkcja zwraca lancuch znakow
+
+Wynik funkcji       void foo(int& x, int y, char * z)         mozna przypisac do zmiennej typu:
+- char*
 - int
-- wskaznik
-+ nic nie zwraca
+- double**
++ taki typ nie istnieje
 
 Aby zadzialal kod: cout << Hello world; nalezy:
 - dodac std:: przed cout lub dodac przed kodem using namespace std;
@@ -66,7 +78,7 @@ Aby zadzialal kod: cout << Hello world; nalezy:
 - dodac #include <iostream> na poczatku pliku
 + wszystkie z powyzszych
 
-Kod: int i = 1; i++; ++i; i--; printf("%d", i); wyprintuje:
+Kod:                      int i = 1; i++; ++i; i--; printf("%d", i);            wypisze na ekran:
 - nic bo kod sie nie skompiluje
 - 1
 + 2
@@ -78,16 +90,16 @@ Metoda to:
 + funkcja zamknieta w klasie;
 - baza danych
 - petla 
-- nie istnieje takie pojecie w c++
+- inna nazwa na wskaznik
 
-Aby wyswietlic ile zajmuje okreslony typ danych (np float) dla Twojego kompilatora uzyjesz kodu:
+Aby wyswietlic ile bajtow zajmuje okreslony typ danych (np. float) uzyjesz kodu:
 + std::cout << sizeof( float ) << std::endl;
 - std::cout << size.float << std::endl;
 - std::cout << float (size) << std::endl;
 - std::cout << float( sizeof ) << std::endl;
 
 Zakres wartosci zmiennej typu char to:
-- od 0 do 255
+- od -255 do 255
 - od 0 do 65535
 + od -128 do 127
 - od -32768 do 32767
@@ -106,16 +118,16 @@ Jak wyrazamy negacje w c++:
 
 #Konrad A., pytania cpp zestaw 1
 
-Jaki znak konczy wszystkie lancuchy znakowe?
+Ktory znak konczy wszystkie lancuchy znakowe w C i C++?
 - '\END'
 + '\0'
 - '.'
 - '#'
 
-Zmienna char przechowuje (nie wliczajac rzutowania):
-+ litery, cyfry, znaki interpunkcyjne
-- tylko wartosci logiczne true/false (prawda/falsz)
-- przydzial innego miejsca w pamieci dla zmiennej
+W architekturze 32-bitowej zmienna typu char przechowuje (nie wliczajac rzutowania):
++ litery, cyfry, znaki interpunkcyjne, wartosci logiczne
+- tylko i wylacznie wartosci logiczne true/false (prawda/falsz)
+- adres do miejsca w pamieci
 - dane typu void
 
 Komentarze to tekst w kodzie zrodlowym: 
@@ -124,13 +136,13 @@ Komentarze to tekst w kodzie zrodlowym:
 + ktory nie podlega kompilacji
 - podlega kompilacji tymczasowej
 
-Liczba o pojedynczej precyzji to zmienna typu:
+Zmienna przechowujaca wartosc zmiennoprzecinkowa pojedynczej precyzji ma typ:
 - double
 + float
 - int
 - string
 
-Operacje przypisania dokonujemy za pomoca znaku:
+Operacji przypisania dokonujemy za pomoca operatora (wylaczajac jakiekolwiek przeladowania):
 + =
 - ==
 - +
@@ -140,30 +152,30 @@ Operacje przypisania dokonujemy za pomoca znaku:
 
 Unia
 - wielkosc unii zawsze jest rowna miejscu zajmowanemu przez najmniejszy obiekt znajdujacy sie w unii
-- jezeli unia zawiera np. obiekt typu int i double to mozemy uzywac wszystkich zmiennych naraz
-+ unia jest to taka jakby struktura zawierajaca jedno miejsce w pamieci przeznaczone dla paru obiektow mogacych byc roznego typu
+- jezeli unia zawiera np. obiekt typu int i double to mozemy uzywac wszystkich tych obiektow jednoczesnie i niezaleznie od siebie
++ unia jest to rodzaj zlozonego typu danych zajmujacego jedno miejsce w pamieci przeznaczone dla paru obiektow mogacych byc roznego typu
 - deklarujac unie zawierajaca 3 zmienne int przydzielamy jej miejsce o wielkosci 12 bajtow
 
 
-Ktore z ponizszych zdan jest falszywe
+Ktore z ponizszych zdan jest FALSZYWE:
 - void to typ fundamentalny, nie moze byc obiektu typu void
-- void *p to wskaznik na obiekt nieznanego typu
+- void* p to wskaznik na obiekt nieznanego typu
 - void funkcja() – deklaracja mowiaca ze funkcja nie bedzie zwracala zadnej wartosci
 + zadne z powyzszych twierdzen nie jest prawdziwe
 
-extern int n;   to:
+Kod        extern int n;     to:
 - to definicja zmiennej;
 - to definicja i deklaracja informujaca kompilator ze zmienna juz istnieje w innym pliku
-+ tylko deklaracja informujaca kompilator ze zmienna juz istnieje w innym zakresie
-- zadne z powyzszych 
++ tylko deklaracja informujaca kompilator ze zmienna juz istnieje w innej jednostce translacji
+- zadne z powyzszych
 
-Ktore ze stwierdzen jest prawdziwe:
-- przeladowanie nie zmusza kompilatora do wybrania funkcji na podstawie parametrow
+Ktore ze stwierdzen jest PRAWDZIWE:
+- przeladowanie funkcji nie zmusza kompilatora do wybrania funkcji na podstawie argumentow
 - funkcja moze byc przeladowana tylko raz
 + funkcja zostanie przeladowana jezeli w danym zakresie istnieja dwie lub wiecej funkcji o tej samej nazwie, ale o roznych sygnaturach
 - zadna z powyzszych odpowiedzi nie jest prawdziwa
 
-asm to:
+Deklaracja    asm    to:
 - funkcja pozwalajaca nadac dodakowy alias do zmiennej
 + slowo kluczowe umozliwiajace wstawienie do kodu C/C++ wstawki kodu assemblerowego
 - funkcja z biblioteki <math.h> wyznaczajaca asymptoty funkcji podanej jako parametr
@@ -177,35 +189,36 @@ W jezyku C++ znakiem "#" rozpoczynaja sie:
 - deklaracje zmiennych globalnych
 - deklaracje obiektow w klasach
 
-Instrukcja zlozona zawarta jest w nawiasach:
+Blok kodu tworzacy zakres jest w C i C++ zwyczajowo ujety w nawiasach:
 - ( ) (nawiasy zwykle)
 + { } (nawiasy klamrowe)
 - [ ] (nawiasy prostokatne)
 - zadna z powyzszych
 
 Funkcje rekurencyjne sa funkcjami:
-+ ktore w swoim ciele wywoluja sama siebie
++ ktore w swoim ciele wywoluja same siebie
 - ktore w swoim ciele wywoluja inne funkcje
-- ktore w swoim ciele wywoluja okreslona funkcje
+- ktore w swoim ciele wywoluja okreslona funkcje, ale nie same siebie
 - ktore nie wywoluja nic
 
-W danym fragmencie kodu: int main() { ... int k; std::cout << k << std::endl; ..} - Jaka wartosc "k" zostanie wyswietlona na ekran?
+W danym fragmencie kodu:         int main() { int k; std::cout << k << std::endl; }       - Jaka wartosc "k" zostanie wyswietlona na ekran?
 + przypadkowa, smieci z pamieci
 - 0
 - 32767
 - -32767
 
 #Damian Cz., pytania cpp zestaw 1
-Funkcja, ktora nic nie zwraca ma przed nazwa:
+
+Funkcja, ktora nic nie zwraca ma typ zwracany:
 - int
 + void
 - static
 - bool
 
-Zmienna, ktora moze przechowac adres innej zmiennej to:
+Zmienna lub stala, ktora moze przechowac adres innej zmiennej to:
 + wskaznik
-- referencja
-- obiekt
+- przeladowanie
+- etykieta
 - rekurencja
 
 Ktora z dyrektyw sluzy do definiowania makr?
@@ -215,27 +228,27 @@ Ktora z dyrektyw sluzy do definiowania makr?
 - *macro
 
 Czy mozna w jednej linii umiescic kilka instrukcji?
-+ tak, nie jest to zalecane ze względu na nieczytelnosc kodu
++ tak, nie jest to zalecane ze względu na czytelnosc kodu
 - tak, jednak niektore kompilatory moga sobie z takim kodem nie poradzic
 - nie
 - zadna z powyzszych odpowiedzi nie jest prawidłowa
 
 Do czego słuzy linker? 
-+ do połączenia kodu programu z okrezlonymi bibliotekami
++ do połączenia kodu programu z okreslonymi bibliotekami
 - do przetlumaczenia kodu z jezyka programowania na jezyk procesora
 - do tworzenia plikow naglowkowych
 - zadna z powyzszych odpowiedzi nie jest prawidlowa
 
-Powolanie do zycia obiektu obiektu nastepuje przez jego:
-- definicję
-+ deklaracje
-- rekurencje
+Nadanie obiektowi miejsca w pamieci wymaga jego:
++ definicji
+- deklaracji
+- rekurencji
 - zadne z powyzszych
 
 Co znaczy, ze dany operator ma wyzszy priorytet niz inny?
 - jego operacja wykonywana jest z pominieciem pozostalych
 - oznacza, ze stosowany jest wyłacznie w petli for
-+ zostanie wykonany najpierw
++ zostanie zastosowany jako pierwszy w kolejnosci
 - zadna z powyzszych odpowiedzi nie jest prawidlowa
 
 
@@ -259,7 +272,13 @@ Kto jest tworca jezyka C++?
 + Bjarne Stroustrup
 - Brian Kernighan
 
-Typ zmiennych float sluzy do przechowywania:
+Oficjalna strona internetowa fundacji Standard C++ to:
++ isocpp.org
+- herbsutter.com
+- cppreference.com
+- microsoft.com
+
+Typ zmiennych double sluzy do przechowywania:
 - znakow
 - liczb calkowitych
 + liczb zmiennoprzecinkowych
@@ -270,3 +289,6 @@ Jaka jest pelna nazwa STL?
 - Standard Topics Library
 - System Template Library
 - System Topics Library
+
+
+
