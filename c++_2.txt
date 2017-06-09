@@ -57,7 +57,7 @@ W funkcji zdefiniowanej poza klasa              void foo(int& x)    przekazujemy
 Najbardziej informatywna sygnatura dla funkcji sprawdzajacej czy dana wartosc liczbowa jest nieparzysta to:
 - bool checkIfGivenNumberIsOddAndReturnTrueOrFalse(int x);
 - bool isOddInt(int x);
-- bool isOdd(int x);
++ bool isOdd(int x);
 - int oddOrEven(int x);
 
 Aby zwiekszyc czytelnosc kodu wartosci numeryczne mozemy zmienic na:
