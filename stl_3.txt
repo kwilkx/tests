@@ -9,62 +9,64 @@
 # Prosze dopisywac swoje pytania
 
 # Pawel D., pytania STL zestaw 3
-multiset od set rozni sie:
+
+std::multiset od std::set rozni sie:
 - tylko nazwa
 + w multiset wartosci moga sie powtarzac
 - w multiset wartosci sa nieposortowane
 - multiset to set setow
 
-Aby sprawdzic czy myVector jest pusty uzyjemy
-- myVector.swap()
-- myVector.clear()
-- myVector.erase()
-+ myVector.empty()
+Aby sprawdzic czy std::vector jest pusty uzyjemy funkcji skladowej
+- swap()
+- clear()
+- erase()
++ empty()
 
-Struktura kontenera set jest zazwyczaj oparta na
-- kolejce
-+ drzewie
-- stosie
-- tablicy
+Struktura kontenera std::set jest zazwyczaj oparta na abstrakcyjnej strukturze danych o nazwie
+- kolejka
++ drzewo
+- stos
+- graf
 
-Po wykonaniu mojIterator++;
+Po wykonaniu inkrementacji iteratora       std::vector<int> vec = {1,2,3}; auto i = vec.begin(); ++i;
 - pojawi sie blad
 + iterator bedzie wskazywal na nastepny element
 - iterator zwiekszy sie o 2
 - zadne z powyzszych
 
-Dane w kontenerze vector:
+Dane w kontenerze std::vector:
 - na poczatku sa ciagle ale po dodaniu nowego elementu moga ulec fragmentacji
-- sa dzielone i lokowane w wolne miejsca pamieci
+- sa ulozone losow w pamieci (niezaleznie od intencji programisty)
 + sa ulozone w pamieci zawsze w sposob ciagly
 - zadne z powyzszych
 
 #Konrad A., pytania STL zestaw 3
+
 Iteratory strumieni to:
-+ Iteraory realizujace odczyt i zapis do strumienia
++ Iteratory realizujace odczyt i zapis do strumienia
 - Iteratory zwiekszajace wartosc zmiennej
-- Nie ma takiego iteratora
+- Nie ma takich iteratorow
 - zadne z powyzszych
 
 Prawda jest, ze kontenery:
-- Zapewniaja semantyke wartosci
-- Wszystkie elementy posiadaja okreslona kolejnosc
-- Nie sprawdzaja mozliwosci wystepienia kazdego rodzaju bledu
-+ Wszystkie odpowiedzi sa poprawne
+- moga byc adaptowane przy uzyciu adapterow STL-a
+- moga alokowac pamiec dynamiczna
+- nie sprawdzaja mozliwosci wystepienia kazdego rodzaju bledu
++ wszystkie odpowiedzi sa poprawne
 
 Wektor to:
 + model tablicy dynamicznej
 - model tablicy statycznej
 - funkcja
-- zmienna
+- wyrazenie lambda
 
-Kolejka deque:
+Kolejka std::deque:
 - To kolejka o dwoch koncach
 - Zapewnia szybkie wstawianie elementow na koncu i na poczatku kontenera
 - Jest podobna do wektora
-+ wszystkie odpowiedzi sa ok
++ wszystkie odpowiedzi sa prawidlowe
 
-Kontenery map oraz multimap:
+Kontenery map oraz multimap jednoczesnie:
 + Sa kontenerami, ktorych elementami sa pary klucz-wartosc
 - Nie dopuszczaja powtorzenia elementow
 - Sa funkcja statyczna
@@ -72,40 +74,28 @@ Kontenery map oraz multimap:
 
 #Rafał P
 
-Plik naglowkowy fstream.h odpowiada za:
-- dolaczenie klas umozliwiajacych realizacje C++ operacji we/wy
-- dolaczenie manipulatorow we/wy C++
+Plik naglowkowy <fstream> odpowiada za:
+- wyrazenia lambda
+- dolaczenie wylacznie manipulatorow we/wy C++
 + dolaczenie klas umozliwiajacych realizacje C++ operacji we/wy na plikach
 - Wszystkie odpowiedzi sa poprawne
 
-Funkcja obslugi ekranu i klawiatury - void clrscr(void); odpowiada za:
-- kasowanie linii (tej z kursorem)
-+ czyszczenie okna
-- wczytanie znaku z klawiatur
-- czyszczenia wszystkich zmiennych
-
-Plik naglowkowy errno.h odpowiada za:
-- definicje stalych
-- definicje manipulatorow we/wy C++
-+ definicje kodow bledow
-- definicja stalych
-
 #Pytania Filip
 
-Iteracja oraz usuwanie elementu z wektora, co nalezy zrobic z iteratorem wektora po uzyciu funkcji erase:
-- Iteratora nie nalezy uzywac z metoda erase
-- Nie nalezy nic robic - Iterator automatycznie zostanie zaktualizowany aby wskazywal element n+1
-+ metoda erase zwraca nowy iterator ktory nalezy zamienic ze starym 
-- zadne z powyzszych
+Iterator i w wyrazeniu        std::vector<int> v = {1,2,3}; std::vector<int>::iterator i;            ma wartosc:
++ nieokreslona
+- wskazujaca na poczatek kolekcji v
+- wskazujaca na koniec kolekcji v
+- wskazuje na nullptr
 
 W jaki sposobro zorganizowana jest pamiec std::vector oraz std::list:
 - Sa tak samo zorganizowane jedyna roznica jest sposob zarzadzania elementami skladowymi
-+ std::vector jest zorganizowany jako ciagly element pamieci, std::list jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona. 
-- std::list jest zorganizowany jako ciagly element pamieci, std::vector jest rozganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona.
++ std::vector jest zorganizowany jako ciagly element pamieci, std::list jest zorganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona
+- std::list jest zorganizowany jako ciagly element pamieci, std::vector jest zorganizowana jako "linked memory" kazdy element listy wskazuje na pamiec ktora moze byc dowolnie rozlozona.
 - zadne z powyzszych
 
 W jaki sposob zadeklarowac wektor ponizszego typu: class CustomType { public: CustomType() = default; int x; }:
-- std::vector<class CustomType> vec
+- std::vector<> vec
 + std::vector<CustomType> vec
 - std::vector vec
 - std::vector<int> vec
@@ -118,7 +108,7 @@ W przypadku tworzenia zbioru z niepowtarzalnymi elementami oraz struktura ktora 
 
 Wytlumacz roznice miedzy std::map a std::set:
 - nie ma roznicy
-- std::map jest zdecydowanie wolniejsza
+- std::map jest zawsze zdecydowanie wolniejsza
 + std::map posiada klucz oraz wartosc, std::set posiada tylko klucz 
 - std::set posiada klucz oraz wartosc, std::map posiada tylko klucz
 
@@ -127,10 +117,10 @@ Wytlumacz roznice miedzy std::map a std::set:
 #Pytania Krzysiek
 
 Iteratory odwrotne
-- automatycznie nie zamieniaja wywolania operatora inkrementacji w wywolanie operatora dekrementacji i odwrotnie
+- automatycznie NIE zamieniaja wywolania operatora inkrementacji w wywolanie operatora dekrementacji i odwrotnie
 + pozwalaja algorytmom przegladac kolekcje wstecz
 - nie naleza do nich iteratory rbegin() oraz rend()
-- nie ma czegos takiego jak iteratory odwrotne
+- wszystkie odpowiedzi sa prawidlowe
 
 Mapy oraz multimapy
 - elementy nie sa automatycznie sortowane zgodnie z okreslonym kryterium
@@ -146,14 +136,14 @@ Niemodyfikujace Algorytmy STL to:
 
 Predykat
 - wszystkie predykaty sa bezargumentowe
-+ jest specjalnym rodzajem funkcji pomocniczej dla algorytmow
-- kazda funkcja jedno- lub dwuargumentowa jest poprawnym predykatem jezeli zwraca boola
-- to funkcje, ktore w trakcie wywolania modyfikuja swoj wewnetrzny stan
++ jest specjalnym rodzajem funkcji pomocniczej dla algorytmow zwracajacej typ konwertowalny do bool
+- nie ma typu
+- to funkcje, ktore w trakcie wywolania ZAWSZE modyfikuja swoj wewnetrzny stan
 
-Algorytmy STL
+Algorytmy STL zawarte w naglowku <functional>
 - sa funkcjami skladowymi klas kontenerowych
 + sa funkcjami globalnymi operujacymi na iteratorach
-- kazdy algorytmy implementowany jest osobno dla kazdego typu kontenerowego
+- kazdy algorytm implementowany jest osobno dla kazdego typu kontenerowego
 - algorytmy STL nie moga operowac na elementach roznych typow kontenerowych
 
 # Damian Cz., pytania STL zestaw 3
@@ -164,28 +154,22 @@ Czy jako kontenery mozemy wykorzystywac zwykle tablice?
 - nie jest to mozliwe
 - zadne z powyzszych
 
-W funkcji skladowej list forward_list Forwardlist:erase_after(const_iterator pos):
-- usuwa element bezposrednio za pozycjs iteratora pos
-- zwraca pozycje nastepnego elementu (lub wartosc end())
-- wywoluje destruktor wobec usuwanego elemntu
-+ wszystkie powyzsze sa prawidlowe
-
-
 multiset od set rozni sie:
 - nazwa
 + w multiset elementy moga sie powtarzac
 - w multiset elementy sa nieposortowane
 - zadne z powyzszych
 
-sekcja przeznaczona do przechowywania zmiennych lokalnych to:
-- heap
-+ stack
-- stack i heap
-- zadme z powyższych
+sekcja przeznaczona do przechowywania automatycznych zmiennych lokalnych to:
+- heap (sterta)
++ stack (stos)
+- stack i heap (stos i sterta)
+- zadne z powyższych
 
-Capality zwraca:
+Funckja skladowa capacity() obiektu typu std::vector zwraca:
 - iterator wskazujacy na element
 - referencje na ostatni element w kontenerze
 - minimalna liczbe elementow jaka moze pomiescic kontener bez  wykonywania realokacji pamieci
 + maksymalna dlugosc tablicy kontenera wyrazona w liczbie elementow
+
 
